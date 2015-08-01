@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "97EBEE481B027B820055F957"
-               BuildableName = "Stormy.app"
-               BlueprintName = "Stormy"
-               ReferencedContainer = "container:Stormy.xcodeproj">
+               BuildableName = "StormyTable.app"
+               BlueprintName = "StormyTable"
+               ReferencedContainer = "container:StormyTable.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "97EBEE5D1B027B830055F957"
-               BuildableName = "StormyTests.xctest"
-               BlueprintName = "StormyTests"
-               ReferencedContainer = "container:Stormy.xcodeproj">
+               BuildableName = "StormyTableTests.xctest"
+               BlueprintName = "StormyTableTests"
+               ReferencedContainer = "container:StormyTable.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "97EBEE5D1B027B830055F957"
-               BuildableName = "StormyTests.xctest"
-               BlueprintName = "StormyTests"
-               ReferencedContainer = "container:Stormy.xcodeproj">
+               BuildableName = "StormyTableTests.xctest"
+               BlueprintName = "StormyTableTests"
+               ReferencedContainer = "container:StormyTable.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "97EBEE481B027B820055F957"
-            BuildableName = "Stormy.app"
-            BlueprintName = "Stormy"
-            ReferencedContainer = "container:Stormy.xcodeproj">
+            BuildableName = "StormyTable.app"
+            BlueprintName = "StormyTable"
+            ReferencedContainer = "container:StormyTable.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "97EBEE481B027B820055F957"
-            BuildableName = "Stormy.app"
-            BlueprintName = "Stormy"
-            ReferencedContainer = "container:Stormy.xcodeproj">
+            BuildableName = "StormyTable.app"
+            BlueprintName = "StormyTable"
+            ReferencedContainer = "container:StormyTable.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "97EBEE481B027B820055F957"
-            BuildableName = "Stormy.app"
-            BlueprintName = "Stormy"
-            ReferencedContainer = "container:Stormy.xcodeproj">
+            BuildableName = "StormyTable.app"
+            BlueprintName = "StormyTable"
+            ReferencedContainer = "container:StormyTable.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
