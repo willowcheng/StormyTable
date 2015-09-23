@@ -35,15 +35,6 @@ class WeeklyTableViewController: UITableViewController {
     func configureView() {
         // Set table view's background view property
         tableView.backgroundView = BackgroundView()
-        
-        // Change the font and size of nav bar text
-        if let navBarFont = UIFont(name: "HelveticaNeue-Thin", size: 20.0) {
-            let navBarAttributesDictionary: [NSObject: AnyObject]? = [
-                NSForegroundColorAttributeName: UIColor.whiteColor(),
-                NSFontAttributeName: navBarFont
-            ]
-            navigationController?.navigationBar.titleTextAttributes = navBarAttributesDictionary
-        }
     }
 
     // MARK: - Table view data source
