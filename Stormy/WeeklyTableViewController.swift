@@ -18,6 +18,8 @@ class WeeklyTableViewController: UITableViewController {
     // Location coordinates
     let coordinate: (lat: Double, lon: Double) = (45.416587,-75.66772)
     
+    var weeklyWeather: [DailyWeather] = []
+    
     // TODO: Enter your API key here
     private let forecastAPIKey = "fb9bc4b82191b64d13b661b6897f06ea"
     
@@ -56,9 +58,9 @@ class WeeklyTableViewController: UITableViewController {
     func retrieveWeatherForecast() {
         let forecastService = ForecastService(APIKey: forecastAPIKey)
         forecastService.getForecast(coordinate.lat, lon: coordinate.lon) {
-            (let currently) in
+            (let forecast) in
             
-            if let currentWeather = currently {
+            if let weatherForecast = forecast, let currentWeather = weatherForecast.currentWeather {
                 
                 dispatch_async(dispatch_get_main_queue()) {
                     
@@ -74,6 +76,12 @@ class WeeklyTableViewController: UITableViewController {
                         self.currentWeatherIcon?.image = icon
                     }
                     
+                    self.weeklyWeather = weatherForecast.weekly
+                    
+                    if let highTemp = self.weeklyWeather.first?.maxTemperature,
+                        let lowTemp = self.weeklyWeather.first?.minTemperature {
+                            self.currentTemperatureRangeLabel?.text = "↑\(highTemp)º↓\(lowTemp)º"
+                    }
                 }
                 
             }
