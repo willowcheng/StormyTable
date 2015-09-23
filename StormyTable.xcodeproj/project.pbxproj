@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		77077D0D1BB35E45003770D2 /* DailyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77077D0C1BB35E45003770D2 /* DailyWeather.swift */; settings = {ASSET_TAGS = (); }; };
+		77077D0F1BB360A9003770D2 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77077D0E1BB360A9003770D2 /* Icon.swift */; settings = {ASSET_TAGS = (); }; };
 		7750AD0B1B6D72D10064C004 /* WeeklyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7750AD0A1B6D72D10064C004 /* WeeklyTableViewController.swift */; };
 		7750AD0D1B6D74AB0064C004 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7750AD0C1B6D74AB0064C004 /* BackgroundView.swift */; };
 		97942D8A1B03AAC2002D007C /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97942D891B03AAC2002D007C /* NetworkOperation.swift */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		77077D0C1BB35E45003770D2 /* DailyWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyWeather.swift; sourceTree = "<group>"; };
+		77077D0E1BB360A9003770D2 /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		7750AD0A1B6D72D10064C004 /* WeeklyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeklyTableViewController.swift; sourceTree = "<group>"; };
 		7750AD0C1B6D74AB0064C004 /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		97942D891B03AAC2002D007C /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			children = (
 				97EBEE721B0284500055F957 /* CurrentWeather.swift */,
 				77077D0C1BB35E45003770D2 /* DailyWeather.swift */,
+				77077D0E1BB360A9003770D2 /* Icon.swift */,
 			);
 			name = Weather;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				77077D0D1BB35E45003770D2 /* DailyWeather.swift in Sources */,
 				97942D8A1B03AAC2002D007C /* NetworkOperation.swift in Sources */,
 				97EBEE511B027B820055F957 /* ViewController.swift in Sources */,
+				77077D0F1BB360A9003770D2 /* Icon.swift in Sources */,
 				7750AD0B1B6D72D10064C004 /* WeeklyTableViewController.swift in Sources */,
 				7750AD0D1B6D74AB0064C004 /* BackgroundView.swift in Sources */,
 				97EBEE731B0284500055F957 /* CurrentWeather.swift in Sources */,
