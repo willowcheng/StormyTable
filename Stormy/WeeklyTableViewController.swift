@@ -37,6 +37,15 @@ class WeeklyTableViewController: UITableViewController {
     func configureView() {
         // Set table view's background view property
         tableView.backgroundView = BackgroundView()
+        
+        // Position refresh control above background view
+        refreshControl?.layer.zPosition = (tableView.backgroundView?.layer.zPosition)! + 1
+        refreshControl?.tintColor = UIColor.whiteColor()
+    }
+    
+    @IBAction func refreshWeather() {
+        retrieveWeatherForecast()
+        refreshControl?.endRefreshing()
     }
 
     // MARK: - Table view data source
