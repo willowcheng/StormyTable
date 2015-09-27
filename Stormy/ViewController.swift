@@ -19,7 +19,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var summaryLabel: UILabel?
     @IBOutlet weak var sunriseTimeLabel: UILabel?
     @IBOutlet weak var sunsetTimeLabel: UILabel?
-
+    
+    @IBOutlet weak var lowTemperatureLabel: UILabel?
+    @IBOutlet weak var highTemperatureLabel: UILabel?
+    @IBOutlet weak var precipitationLabel: UILabel?
+    @IBOutlet weak var humidityLabel: UILabel?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -35,16 +41,26 @@ class ViewController: UIViewController {
             sunriseTimeLabel?.text = weather.sunriseTime
             sunsetTimeLabel?.text = weather.sunsetTime
             
+            if let lowTemp = weather.minTemperature,
+                let highTemp = weather.maxTemperature,
+                let rain = weather.precipChance,
+                let humidity = weather.humidity {
+                    lowTemperatureLabel?.text = "\(lowTemp)º"
+                    highTemperatureLabel?.text = "\(highTemp)º"
+                    precipitationLabel?.text = "\(rain)%"
+                    humidityLabel?.text = "\(humidity)%"
+            }
+            
             self.title = weather.day
         }
         
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
 }
 
