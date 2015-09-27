@@ -115,7 +115,7 @@
                                     <outlet property="dayLabel" destination="Krb-fG-qy0" id="ph9-8B-Kmv"/>
                                     <outlet property="temperatureLabel" destination="Piq-sb-YD1" id="wA5-bG-pNT"/>
                                     <outlet property="weatherIcon" destination="LT3-cr-PKe" id="p4p-GX-q8o"/>
-                                    <segue destination="vXZ-lx-hvc" kind="show" id="266-hJ-3ta"/>
+                                    <segue destination="vXZ-lx-hvc" kind="show" identifier="showDaily" id="266-hJ-3ta"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
