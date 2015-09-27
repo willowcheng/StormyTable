@@ -15,16 +15,29 @@ class ViewController: UIViewController {
             configureView()
         }
     }
+    @IBOutlet weak var weatherIcon: UIImageView?
+    @IBOutlet weak var summaryLabel: UILabel?
+    @IBOutlet weak var sunriseTimeLabel: UILabel?
+    @IBOutlet weak var sunsetTimeLabel: UILabel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        configureView()
     }
     
     func configureView() {
         if let weather = dailyWeather {
+            
+            // Update UI with information from the data model
+            weatherIcon?.image = weather.largeIcon
+            summaryLabel?.text = weather.summary
+            sunriseTimeLabel?.text = weather.sunriseTime
+            sunsetTimeLabel?.text = weather.sunsetTime
+            
             self.title = weather.day
         }
+        
         
     }
 
