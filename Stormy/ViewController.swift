@@ -22,6 +22,9 @@ class ViewController: UIViewController {
     }
     
     func configureView() {
+        if let weather = dailyWeather {
+            self.title = weather.day
+        }
         
     }
 
